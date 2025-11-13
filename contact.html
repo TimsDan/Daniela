@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Tims Dan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="top">
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="skills.html">Compétences</a>
+    <a href="projects.html">Projets</a>
+    <a href="media.html">Médias</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="header">
+    <div class="bg"></div>
+    <div class="inner">
+      <h1>Contact</h1>
+      <p class="lead">Discutons d'une collaboration ou d'un projet — je suis disponible pour échanges et partenariats.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card contact-grid">
+      <div>
+        <h2>Écris-moi</h2>
+
+        <!-- Simple formulaire par mailto (fonctionne sans serveur) -->
+        <form action="mailto:tims_ando@yahoo.fr" method="post" enctype="text/plain">
+          <label>Nom</label><br>
+          <input type="text" name="Nom" style="width:100%; padding:10px; margin:6px 0; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"><br>
+
+          <label>Email</label><br>
+          <input type="email" name="Email" style="width:100%; padding:10px; margin:6px 0; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"><br>
+
+          <label>Message</label><br>
+          <textarea name="Message" rows="6" style="width:100%; padding:10px; margin:6px 0; border-radius:8px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit"></textarea><br>
+
+          <button class="btn" type="submit">Envoyer</button>
+          <small style="display:block; margin-top:8px; color:var(--muted)">Ou contactez-moi directement : <a style="color:var(--accent-2)" href="mailto:tims_ando@yahoo.fr">tims_ando@yahoo.fr</a></small>
+        </form>
+
+      </div>
+
+      <aside class="card" style="padding:14px;">
+        <h3>Coordonnées</h3>
+        <p><strong>Email :</strong> <a href="mailto:tims_ando@yahoo.fr">tims_ando@yahoo.fr</a></p>
+        <p><strong>WhatsApp :</strong> <a href="https://wa.me/261346050571" target="_blank">+261 34 60 505 71</a></p>
+        <p><strong>Téléphone :</strong> +261 38 53 158 26</p>
+        <p><strong>Siège :</strong> Fianarantsoa, Madagascar</p>
+
+        <h4 style="margin-top:12px">Liens</h4>
+        <p><a class="link" href="tims_dan_cv.pdf" download>📄 Télécharger le CV</a></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="yr7"></span> Tims Dan — Contact</p>
+  </footer>
+  <script>document.getElementById('yr7').textContent = new Date().getFullYear();</script>
+</body>
+</html>
